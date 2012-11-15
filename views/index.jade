@@ -1,0 +1,112 @@
+body(lang='en')
+.container
+  #top-bar
+    header
+      #title
+        h1 Fn Responsive
+        h3=title
+      #callout
+        p Watch the grid below fold as you resize your screen.
+  #example
+    #column-container
+      #c01.column_example col
+      #c02.column_example col
+      #c03.column_example col
+      #c04.column_example col
+      #c05.column_example col
+      #c06.column_example col
+      #c07.column_example col
+      #c08.column_example col
+      #c09.column_example col
+      #c10.column_example col
+      #c11.column_example col
+      #c12.column_example col
+  #hero
+    div
+      figure
+        img(src='i/fnresponsiveHero.png', alt='hero grids')
+      hgroup
+        h2 A Responsible Grid
+        p
+          | Built from the ground-up for a responsive design that builds a bridge between design and development. Use it together to rapidly prototype adaptive designs. Much like the Swiss smashed the boundaries of grid design in the 50's the web may never be the same.
+  #values
+    ul
+      li
+        h3 Design Geometry
+        p
+          | A designer carefully crafts the geometry of the layout and typographic rhythm. Fn Responsive calculates and controls the design as it was intended by the designer. The designs beautiful rhythm can leverage Fibonacci, The Golden Means, a musical scale or roll your own.
+      li
+        h3 Small, Medium Or Large
+        p
+          | Simplify responsive design in the early stages by concentrating on only three main form factors. Use "breakpoints" that straddle form factors rather than physical edges. Speak and design from a common foundation with limitless possibilities.
+      li
+        h3 Shared Design Language
+        p
+          | The grids help us translate how we see the responsive interactions from wireframes to hi-fi comps. The folding grids become a  sandbox to explore our interactions whether someone designs directly on the grids or takes a very liberal approach.
+          //
+              Whatever your style this system increases the speed at which we can create prototypes and test our thinking. 
+    ul
+      li
+        h3 LESS Is More
+        p
+          | Powered by
+          a(href='http://lesscss.org/') LESS
+          | . What I did not want was another CSS grid system that littered my markup with non-semantic classes. In reality when a project goes from concept to production we often have little control over things like HTML markup. Plus, it is good practice to separate content from style as often as you can.
+      li
+        h3 Device Agnostic
+        p
+          | With hundreds of screen resolutions and device dimensions evolving each day, the pixel is a moving target. To think about the web responsively is to
+          a(href='http://trentwalton.com/2012/02/02/redefined/') think in proportions, not pixels
+          | . The Fn responsive grid employs relative and unit-less measurements to free ourselves from the entanglement!
+      li
+        h3 Feature And Conditional
+        p
+          | We combine simplified markup with Modernizer's feature detection and conditional statements. We start by being very specific with our styles to control layout and avoid most browser specific hacks. Then we can test for features and provide a fallback if needed. As a last resort we can target specific browsers using conditional statements.
+  #schema
+    section
+      figure
+        img(src='i/schematic.png', alt='schematic')
+      ul
+        li
+          h3 foundation
+          p
+            | Beginning with a firm foundation of
+            a(href='http://nicolasgallagher.com/about-normalize-css/') a normalizer
+            | , color variable and typographic rhythm. Normalize is an alternative to CSS resets. It is the product of hundreds of hours of extensive research by
+            a(href='http://twitter.com/necolas') @necolas
+            | and
+            a(href='http://twitter.com/jon_neal') @jon_neal
+            | .
+        li
+          h3 base
+          p
+            | Base layers the foundation files with the global styles. Grid.less sets the base for the grids and is based upon
+            a(href='http://semantic.gs/') semantic.gs
+            | so that the grid is abstracted from our mark-up. Here we leverage it to further separate different grid settings from each main viewport size by changing the grid settings in the three main layout files.
+        li
+          h3 layout
+          p
+            | Like the three bears we have three main layout files. Each of which includes the foundation and base along with screen proportion style tweaks to serve each device only what it needs.
+  #thanks
+    footer
+      section
+        h3
+          a(href='http://fnresponsive.com/') Fn Responsive Grid System (2.0)
+        h6
+          a(href='http://randallelliott.com/') by Randall Elliott
+        p currently unlicensed
+      section
+        h3 Many thanks to:
+        ul
+          li
+            strong Joni Korpi's Golden Grid System
+            | utilizing folding columns, elastic gutters and a scalable baseline grid.
+          li
+            strong Vladimir Carrer's Golden Grid
+            | that stirs my inner Fibonacci geek.
+          li
+            strong The Goldilocks Approach
+            | which paved the way to keep the main breaks simple with just three.
+          li
+            strong The Semantic Grid System
+            | brought to you by the friendly guys at TwigKit.
