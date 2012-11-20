@@ -9,7 +9,7 @@ exports.index = function(req, res){
     switch (res.profile) {
 
        case "smartPhone":
-          res.render('smartphone', { title: 'ResponderJS - Smart Phone', desc: 'Node.js Adaptive/Responsive Utility Framework' });
+          res.render('index', { title: 'ResponderJS - Smart Phone', desc: 'Node.js Adaptive/Responsive Utility Framework' });
           break;
 
        case "tablet":
