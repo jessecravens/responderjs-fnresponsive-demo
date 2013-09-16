@@ -1,6 +1,6 @@
     
 
-# Responder Demo Application
+# Responder / fn Responsive Demo Application
 
 An express application that uses [responder](https://github.com/frogdesign/responder) middleware and Randall Elliot's fn Responsive framework.
 
