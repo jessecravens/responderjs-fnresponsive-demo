@@ -1,6 +1,6 @@
 
 /*
- * GET home page.
+ * GET template based on the Device profile
  */
 
 exports.index = function(req, res){	
